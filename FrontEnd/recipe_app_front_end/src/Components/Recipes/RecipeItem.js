@@ -36,13 +36,12 @@ const RecipeItem = (props) => {
         meat = <FontAwesomeIcon icon={ faCarrot } size="2x" />
     }
 
-
     return (
         <Card className="h-100">
             <Card.Header>
-                <h1>
+                <h2>
                     {props.title}
-                </h1>
+                </h2>
             </Card.Header>
             <Card.Body>
                 <div>
@@ -54,10 +53,10 @@ const RecipeItem = (props) => {
                 </div>
             </Card.Body>
             <Card.Footer className="d-flex justify-content-center">
-                <div className="mx-1">{meat}</div>
+                <div className="mx-2">{meat}</div>
                 <div className="text-success mx-2">{quick_and_easy}</div>
                 <div className="text-danger mx-2">{is_favorite}</div>
-                <div className="text-warning mx-2">{have_made_before}</div>
+                <div className="text-danger mx-2">{have_made_before}</div>
             </Card.Footer>
         </Card>
     )
